@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 import './css/main.css';
 import Profile from './Profile.jsx';
+import Grades from './Grades.jsx';
 
 function App() {
   
@@ -58,6 +59,7 @@ function App() {
         <Route path='/login' element={<Login onSubmit={handleLogin}/>}/>
         <Route path='/registration' element={<Registration onSubmit={handleRegister}/>}/>
         <Route path='/profile' element={<Profile />}/>
+        <Route path='/grades' element={<Grades />}/>
       </Routes>
       
     </>

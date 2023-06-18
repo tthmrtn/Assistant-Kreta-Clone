@@ -18,6 +18,7 @@ const Profile = () => {
                             <h2>Név: Tóth Martin</h2>
                             <p>Születési Dátum: 2002.09.01</p>
                             <p>Intézmény neve: Lorem ipsum dolor sit, amet consectetur</p>
+                            <p>Kezdés éve: 2017</p>
                         </div>
                     </div>
                 </div>
