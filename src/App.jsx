@@ -7,6 +7,7 @@ import Navigation from './Navigation.jsx';
 import { useState } from 'react';
 
 import './css/main.css';
+import Profile from './Profile.jsx';
 
 function App() {
   
@@ -37,7 +38,7 @@ function App() {
 
   function handleLogin(){
     document.cookie = "user=John Doe";
-    logIn(!loggedIn);
+    logIn(true);
   }
 
   function handleRegister(){
@@ -46,7 +47,7 @@ function App() {
 
   return (
     <>
-      {(loggedIn && <Navigation />)}
+      {getCookie("user") != '' && <Navigation />}
       <h1 className="logo-title">Assistant</h1>
       <Routes>
         <Route path='/' element={<Main onSubmit={() => {
@@ -56,6 +57,7 @@ function App() {
                 }}/>}/>
         <Route path='/login' element={<Login onSubmit={handleLogin}/>}/>
         <Route path='/registration' element={<Registration onSubmit={handleRegister}/>}/>
+        <Route path='/profile' element={<Profile />}/>
       </Routes>
       
     </>

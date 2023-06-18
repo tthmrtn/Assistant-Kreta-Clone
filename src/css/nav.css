@@ -1,13 +1,4 @@
-main{
-    padding-top: 3em;
-    height: calc(100vh - 3em);
-    background-color: aqua;
-}
-
-
-
 .NavList{
-    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: end;
     list-style: none;
@@ -17,18 +8,40 @@ main{
 }
 
 .NavButton{
-    background-color: antiquewhite;
+    color: rgb(240, 104, 210);
     padding: 1em 0;
+    scale: 1;
+    border: 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.NavButton:hover{
+    background-color: rgb(111, 210, 210, .2);
+    text-decoration: underline;
 }
 
 .NavButton > * {
+    color: rgb(240, 104, 210);
     padding: 1em;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 740px) {
     .NavList{
+        background-color: white;
+        display: none;
         flex-direction: column;
         text-align: end;
+        gap: 0;
+    }
+
+    .NavButton {
+        width: 100%;
+    }
+
+    .visible{
+        display: flex;
     }
 }

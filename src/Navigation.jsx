@@ -12,7 +12,7 @@ const Navigation = () => {
                     <NavigationButton text="Beállítások" direction="/settings" />
                     <NavigationButton text="Jegyeim" direction="/grades" />
                     <NavigationButton text="Házifeladatok" direction="/homework" />
-                    <NavigationButton text="Profil" direction="/profil" />
+                    <NavigationButton text="Profil" direction="/profile" />
                 </ul>
             </nav>
         </>
